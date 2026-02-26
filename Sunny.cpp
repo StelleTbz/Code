@@ -3,16 +3,21 @@ using namespace std;
 //consts
 //values
 //fundef
+bool jdg(int);
 //main
 int main(){
-    int s,cnt=0;
-    cin>>s;
-    for(int i=(int)sqrt(1.0*s);i>0;i--){
-        if(s%i==0){
-            cnt++;
+    int bg,ed,sum=0;
+    cin>>bg>>ed;
+    for(int i=bg+1;i<ed;i++){
+        if(jdg(i)) {
+            sum+=i;
         }
     }
-    cout<<cnt;
+    cout<<sum;
     return 0;
 }
 //funcdo 
+bool jdg(int n){
+    if(n%100==0) n/=100;
+    return n%4==0;
+}
