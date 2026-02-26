@@ -3,21 +3,14 @@ using namespace std;
 //consts
 //values
 //fundef
-bool jdg(int);
 //main
 int main(){
-    int bg,ed,sum=0;
-    cin>>bg>>ed;
-    for(int i=bg+1;i<ed;i++){
-        if(jdg(i)) {
-            sum+=i;
-        }
-    }
+    int h,s,m,sum=0;
+    char ap;
+    cin>>h>>m>>s>>ap;
+    if(ap=='P') sum+=12*3600;
+    sum+=h*3600+m*60+s;
     cout<<sum;
     return 0;
 }
 //funcdo 
-bool jdg(int n){
-    if(n%100==0) n/=100;
-    return n%4==0;
-}

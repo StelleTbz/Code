@@ -1,11 +1,11 @@
 # 忽略所有 .exe 文件
-.exe
+*.exe
 
 # 忽略编译中间文件（例如 C++ 的 .obj、.o）
-.obj
-.o
-.a
-.lib
+*.obj
+*.o
+*.a
+*.lib
 
 # 忽略输出文件夹（如 build、bin）
 build
