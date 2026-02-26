@@ -14,5 +14,4 @@ bin
 # 忽略 IDE 配置（如 .vscode）
 .vscode
 .code-workspace
-.vnev
 .venv
