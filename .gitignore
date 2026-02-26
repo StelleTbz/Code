@@ -1,0 +1,16 @@
+# 忽略所有 .exe 文件
+.exe
+
+# 忽略编译中间文件（例如 C++ 的 .obj、.o）
+.obj
+.o
+.a
+.lib
+
+# 忽略输出文件夹（如 build、bin）
+build
+bin
+
+# 忽略 IDE 配置（如 .vscode）
+.vscode
+.code-workspace
