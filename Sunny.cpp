@@ -6,12 +6,13 @@ using namespace std;
 bool jdg(int);
 //main
 int main(){
-    int y,m;
-    cin>>y>>m;
-    if(m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12) cout<<31;
-    else if( m==4 or m==6 or m==9 or m==11 ) cout<<30;
-    else if(jdg(y)) cout<<29;
-    else cout<<28;
+    int n,cnt=0,sum=0;
+    cin>>n;
+    for(int i=1;i<n;i++){
+        cnt+=i;
+        sum+=cnt;
+    }
+    cout<<sum;
     return 0;
 }
 //funcdo 
