@@ -5,12 +5,14 @@ using namespace std;
 //fundef
 //main
 int main(){
-    int h,s,m,sum=0;
-    char ap;
-    cin>>h>>m>>s>>ap;
-    if(ap=='P') sum+=12*3600;
-    sum+=h*3600+m*60+s;
-    cout<<sum;
+    int s,cnt=0;
+    cin>>s;
+    for(int i=(int)sqrt(1.0*s);i>0;i--){
+        if(s%i==0){
+            cnt++;
+        }
+    }
+    cout<<cnt;
     return 0;
 }
 //funcdo 
