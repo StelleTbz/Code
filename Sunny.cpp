@@ -8,7 +8,7 @@ bool jdg(int);
 int main(){
     int n,cnt=0,sum=0;
     cin>>n;
-    for(int i=1;i<n;i++){
+    for(int i=1;i<=n;i++){
         cnt+=i;
         sum+=cnt;
     }
