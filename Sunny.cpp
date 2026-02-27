@@ -8,9 +8,10 @@ inline void pus();
 int main(){
     int n;
     cin>>n;
-    cout<<n/13<<n%13;
-
-    pus();
+    for(int i=1;i<=n;i++){
+        if(n%i==0) cout<<i<<"\n";
+    }
+    // pus();
     return 0;
 }
 //funcdo 
