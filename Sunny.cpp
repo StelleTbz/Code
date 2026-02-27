@@ -7,9 +7,12 @@ using namespace std;
 // main
 int main()
 {
-    int h1,h2,m1,m2;
-    cin>>h1>>m1>>h2>>m2;
-    cout<<((h2-h1)*60+(m2-m1));
+    int x,y,z,q;
+    cin>>x>>y>>z>>q;
+    int sum=2*x+5*y+3*z;
+    if(sum<=q) cout<<"Yes"<<endl<<(int)abs(sum-q);
+    else cout<<"No"<<endl<<(int)abs(sum-q);
+    //system("pause");
     return 0;
 }
 // funcdo
