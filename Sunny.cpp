@@ -12,7 +12,7 @@ int main()
     int sum=2*x+5*y+3*z;
     if(sum<=q) cout<<"Yes"<<endl<<(int)abs(sum-q);
     else cout<<"No"<<endl<<(int)abs(sum-q);
-    //system("pause");
+    system("pause");
     return 0;
 }
 // funcdo
