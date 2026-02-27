@@ -6,12 +6,11 @@ using namespace std;
 inline void pus();
 //main
 int main(){
-    int n;
-    cin>>n;
-    for(int i=1;i<=n;i++){
-        if(n%i==0) cout<<i<<"\n";
-    }
-    // pus();
+    int h,s,m,dt,t;
+    cin>>h>>m>>s>>dt;
+    t=dt+s+60*m+3600*h;
+    cout<<t%3600<<" "<<t/3600%60<<" "<<t%60;
+    pus();
     return 0;
 }
 //funcdo 
