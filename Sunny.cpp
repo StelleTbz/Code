@@ -3,20 +3,18 @@ using namespace std;
 //consts
 //values
 //fundef
-bool jdg(int);
+inline void pus();
 //main
 int main(){
-    int n,cnt=0,sum=0;
+    int n;
     cin>>n;
-    for(int i=1;i<=n;i++){
-        cnt+=i;
-        sum+=cnt;
-    }
-    cout<<sum;
+    cout<<n/13<<n%13;
+
+    pus();
     return 0;
 }
 //funcdo 
-bool jdg(int n){
-    if(n%100==0) n/=100;
-    return n%4==0;
+inline void pus(){
+    cout<<endl<<endl<<endl;
+    system("pause");
 }
