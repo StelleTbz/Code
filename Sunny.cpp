@@ -3,17 +3,22 @@ using namespace std;
 // consts
 // values
 // fundef
-
+inline void pause();
 // main
 int main()
 {
-    int x,y,z,q;
-    cin>>x>>y>>z>>q;
-    int sum=2*x+5*y+3*z;
-    if(sum<=q) cout<<"Yes"<<endl<<(int)abs(sum-q);
-    else cout<<"No"<<endl<<(int)abs(sum-q);
-
-    //getchar();    //remember to "//" here!!!!
+    int l,r,k;
+    long long cnt=0;
+    cin>>k>>l>>r;
+    for(int i=l;i<=r;i++){
+        if(i%10==k||i%k==0) cnt+=i;
+    }
+    cout<<cnt;
+    pause();    //remember to "//" here!!!!
     return 0;
 }
 // funcdo
+inline void pause(){
+    cout<<endl<<endl<<endl;
+    system("pause");
+}
