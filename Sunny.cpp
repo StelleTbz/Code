@@ -3,22 +3,20 @@ using namespace std;
 // consts
 // values
 // fundef
-inline void pause();
+inline void pus();
 // main
 int main()
 {
-    int l,r,k;
-    long long cnt=0;
-    cin>>k>>l>>r;
-    for(int i=l;i<=r;i++){
-        if(i%10==k||i%k==0) cnt+=i;
+    int m,n;
+    cin>>n>>m;
+    for(int i=1;i<=n;i++){
+        if(i%m!=0) cout<<i<<endl;
     }
-    cout<<cnt;
-    pause();    //remember to "//" here!!!!
+    // pus();    //remember to "//" here!!!!
     return 0;
 }
 // funcdo
-inline void pause(){
+inline void pus(){
     cout<<endl<<endl<<endl;
     system("pause");
 }
