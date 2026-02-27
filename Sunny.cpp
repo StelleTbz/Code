@@ -3,24 +3,13 @@ using namespace std;
 // consts
 // values
 // fundef
-bool jdg(int);
+
 // main
 int main()
 {
-    int n, cnt = 0, sum = 0;
-    cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        cnt += i;
-        sum += cnt;
-    }
-    cout << sum;
+    int h1,h2,m1,m2;
+    cin>>h1>>m1>>h2>>m2;
+    cout<<((h2-h1)*60+(m2-m1));
     return 0;
 }
 // funcdo
-bool jdg(int n)
-{
-    if (n % 100 == 0)
-        n /= 100;
-    return n % 4 == 0;
-}
