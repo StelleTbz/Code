@@ -6,11 +6,10 @@ using namespace std;
 inline void pus();
 //main
 int main(){
-    int n;
-    cin>>n;
-    if(pow(n,1.0/3)==(int)pow(n,1/3.0)) cout<<"Yes";
-    else cout<<"No";
-    // pus();
+    int n,a,b;
+    cin>>n>>a>>b;
+    cout<<n/(a+b);
+    pus();
     return 0;
 }
 //funcdo 
