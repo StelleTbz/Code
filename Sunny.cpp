@@ -6,18 +6,14 @@ using namespace std;
 inline void pus();
 //main
 int main(){
-    long double k,c,f;
-    cin>>k;
-    c=k-273.15;
-    f=1.8*c+32;
-    if(f>212){
-        cout<<"Temperature is too high!";
+    int n,x,cnto=0,cnte=0;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>x;
+        if(x%2==1) cnto++;
+        else cnte++;
     }
-    else {
-        cout<<fixed<<setprecision(2)<<c<<" ";
-        cout<<fixed<<setprecision(2)<<f;
-    }
-    pus();
+    cout<<cnto<<" "<<cnte;
     return 0;
 }
 //funcdo 
