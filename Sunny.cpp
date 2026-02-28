@@ -14,6 +14,8 @@ int main(){
         else cnte++;
     }
     cout<<cnto<<" "<<cnte;
+    //main work part end
+    pus();
     return 0;
 }
 //funcdo 
